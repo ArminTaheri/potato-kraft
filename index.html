@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>Potato Kraft</title>
+    </head>
+    <body>
+        <div id="viewport"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r78/three.min.js"></script>
+        <script src="target/scala-2.11/potato-kraft-jsdeps.js"></script>
+        <script src="target/scala-2.11/potato-kraft-fastopt.js"></script>
+        <script>
+          var pk = potatoKraft.PotatoKraft();
+          pk.init(window, document.getElementById("viewport"));
+          pk.main();
+        </script>
+    </body>
+</html>

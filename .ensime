@@ -1,0 +1,26 @@
+(
+ :root-dir "/home/armin/projects/potato-kraft"
+ :cache-dir "/home/armin/projects/potato-kraft/.ensime_cache"
+ :scala-compiler-jars ("/home/armin/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.8.jar" "/home/armin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar" "/home/armin/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar" "/home/armin/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.8.jar")
+ :name "potato-kraft"
+ :java-home "/usr/lib/jvm/java-8-oracle"
+ :java-flags ("-Xss2m" "-Xms1024m" "-Xmx1024m" "-XX:ReservedCodeCacheSize=128m" "-XX:MaxMetaspaceSize=256m")
+ :java-compiler-args nil
+ :reference-source-roots ("/usr/lib/jvm/java-8-oracle/src.zip")
+ :scala-version "2.11.8"
+ :compiler-args ("-Xplugin:/home/armin/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.8/jars/scalajs-compiler_2.11.8-0.6.10.jar" "-feature" "-deprecation" "-Xlint" "-Yinline-warnings" "-Yno-adapted-args" "-Ywarn-dead-code" "-Ywarn-numeric-widen" "-Xfuture" "-Ywarn-unused-import" "-Ymacro-expand:discard")
+ :formatting-prefs nil
+ :disable-source-monitoring nil
+ :disable-class-monitoring nil
+ :subprojects ((
+   :name "potato-kraft"
+   :source-roots ("/home/armin/projects/potato-kraft/src/main/scala")
+   :targets ("/home/armin/projects/potato-kraft/target/scala-2.11/classes")
+   :test-targets ("/home/armin/projects/potato-kraft/target/scala-2.11/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/home/armin/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.11/jars/querki-jsext_sjs0.6_2.11-0.6.jar" "/home/armin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.9.1.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.10.jar" "/home/armin/.ivy2/cache/org.denigma/threejs-facade_sjs0.6_2.11/jars/threejs-facade_sjs0.6_2.11-0.0.74-0.1.6.jar")
+   :runtime-deps nil
+   :test-deps ("/home/armin/.ivy2/cache/org.scala-js/scalajs-test-interface_2.11/jars/scalajs-test-interface_2.11-0.6.10.jar")
+   :doc-jars ("/home/armin/projects/potato-kraft/target/scala-2.11/potato-kraft_sjs0.6_2.11-0.1-SNAPSHOT-javadoc.jar" "/home/armin/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.11/docs/querki-jsext_sjs0.6_2.11-0.6-javadoc.jar" "/home/armin/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.11.8-javadoc.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/docs/scalajs-dom_sjs0.6_2.11-0.9.1-javadoc.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-library_2.11/docs/scalajs-library_2.11-0.6.10-javadoc.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-test-interface_2.11/docs/scalajs-test-interface_2.11-0.6.10-javadoc.jar" "/home/armin/.ivy2/cache/org.denigma/threejs-facade_sjs0.6_2.11/docs/threejs-facade_sjs0.6_2.11-0.0.74-0.1.6-javadoc.jar")
+   :reference-source-roots ("/home/armin/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.11/srcs/querki-jsext_sjs0.6_2.11-0.6-sources.jar" "/home/armin/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/srcs/scalajs-dom_sjs0.6_2.11-0.9.1-sources.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-library_2.11/srcs/scalajs-library_2.11-0.6.10-sources.jar" "/home/armin/.ivy2/cache/org.scala-js/scalajs-test-interface_2.11/srcs/scalajs-test-interface_2.11-0.6.10-sources.jar" "/home/armin/.ivy2/cache/org.denigma/threejs-facade_sjs0.6_2.11/srcs/threejs-facade_sjs0.6_2.11-0.0.74-0.1.6-sources.jar")))
+)
