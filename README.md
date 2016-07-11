@@ -1,2 +1,2 @@
 # potato-kraft
-This rpg has nothing to do with potatoes.
+This game has nothing to do with potatoes.
