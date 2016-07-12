@@ -1,0 +1,6 @@
+.ensime_cache
+node_modules/
+project/
+!project/build.properties
+!project/plugins.sbt
+target/

@@ -10,9 +10,7 @@
         <script src="target/scala-2.11/potato-kraft-jsdeps.js"></script>
         <script src="target/scala-2.11/potato-kraft-fastopt.js"></script>
         <script>
-          var pk = potatoKraft.PotatoKraft();
-          pk.init(window, document.getElementById("viewport"));
-          pk.main();
+          potatoKraft.PotatoKraft().run(document.getElementById("viewport"));
         </script>
     </body>
 </html>
