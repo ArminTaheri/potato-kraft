@@ -12,7 +12,6 @@ object PotatoKraft extends js.JSApp {
     val graphics = new GraphicsEngine(view)
 
     js.Dynamic.global.requestAnimationFrame(graphics.renderLoop _)
-    graphics.windowResize(null)
     js.Dynamic.global.onresize = graphics.windowResize _
   }
 }

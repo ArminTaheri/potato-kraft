@@ -7,22 +7,21 @@ import js.DynamicImplicits.number2dynamic
 
 class GraphicsEngine(parent: dom.html.Div) {
 
-  val VIEWSIZE = 900
+  val VIEWSIZE = 900;
+  val NEAR = 1.0;
+  val FAR = 1000.0;
 
   val renderer = new WebGLRenderer()
 
   val scene = new Scene()
-
-  val camera = new OrthographicCamera()
-  camera.near = -VIEWSIZE.toDouble
-  camera.far = VIEWSIZE.toDouble
-  sceneAdd(camera)
+  var camera = new OrthographicCamera()
+  windowResize(null)
 
   parent.appendChild(renderer.domElement)
 
-
   def sceneAdd(obj: Object3D): Unit = scene.add(obj)
   def sceneRemove(obj: Object3D): Unit = scene.remove(obj)
+
 
   def renderLoop(time: Double): Unit = {
     js.Dynamic.global.requestAnimationFrame(renderLoop _)
@@ -41,9 +40,15 @@ class GraphicsEngine(parent: dom.html.Div) {
 
     renderer.setSize(width, height)
 
-    camera.left = -viewportSize/2.0
-    camera.right = viewportSize/2.0
-    camera.top = -VIEWSIZE/2.0
-    camera.left = VIEWSIZE/2.0
+    sceneRemove(camera)
+    camera = new OrthographicCamera(
+      -viewportSize/2.0,
+      viewportSize/2.0,
+      -VIEWSIZE/2.0,
+      VIEWSIZE/2.0,
+      FAR,
+      NEAR
+    )
+    sceneAdd(camera)
   }
 }
